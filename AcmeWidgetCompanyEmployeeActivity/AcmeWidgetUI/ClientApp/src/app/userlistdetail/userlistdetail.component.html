@@ -3,32 +3,33 @@
   <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
   <!-- First Name Column -->
+  
   <ng-container matColumnDef="FirstName">
     <th mat-header-cell *matHeaderCellDef> First Name </th>
-    <td mat-cell *matCellDef="let element"> {{element.FirstName}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
   </ng-container>
 
   <!-- Last Name Column -->
   <ng-container matColumnDef="LastName">
     <th mat-header-cell *matHeaderCellDef> Last Name </th>
-    <td mat-cell *matCellDef="let element"> {{element.LastName}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
   </ng-container>
   <!-- Email address Column -->
   <ng-container matColumnDef="EmailAddress">
     <th mat-header-cell *matHeaderCellDef> Email Address  </th>
-    <td mat-cell *matCellDef="let element"> {{element.EmailAddress}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.emailAddress}} </td>
   </ng-container>
 
   <!-- Actvity Column -->
   <ng-container matColumnDef="ActivityName">
     <th mat-header-cell *matHeaderCellDef> Activity Name  </th>
-    <td mat-cell *matCellDef="let element"> {{element.ActivityName}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.activityName}} </td>
   </ng-container>
 
   <!-- comments Column -->
   <ng-container matColumnDef="Comments">
     <th mat-header-cell *matHeaderCellDef> Comments  </th>
-    <td mat-cell *matCellDef="let element"> {{element.Comments}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.comments}} </td>
   </ng-container>
 
 

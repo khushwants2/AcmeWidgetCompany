@@ -8390,11 +8390,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\khush\\source\\repos\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity.csproj",
+      "projectUniqueName": "C:\\Users\\khush\\source\\repos\\git\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity.csproj",
       "projectName": "AcmeWidgetCompanyEmployeeActivity",
-      "projectPath": "C:\\Users\\khush\\source\\repos\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity.csproj",
+      "projectPath": "C:\\Users\\khush\\source\\repos\\git\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity.csproj",
       "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\khush\\source\\repos\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity\\obj\\",
+      "outputPath": "C:\\Users\\khush\\source\\repos\\git\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetCompanyEmployeeActivity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\khush\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8410,8 +8410,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\khush\\source\\repos\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\AcmeWidgetBusinessModels.csproj": {
-              "projectPath": "C:\\Users\\khush\\source\\repos\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\AcmeWidgetBusinessModels.csproj"
+            "C:\\Users\\khush\\source\\repos\\git\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\AcmeWidgetBusinessModels.csproj": {
+              "projectPath": "C:\\Users\\khush\\source\\repos\\git\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\AcmeWidgetBusinessModels.csproj"
             }
           }
         }

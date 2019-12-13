@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { RegistrationService } from '../service/registration.service';
 
 @Component({
@@ -7,12 +7,13 @@ import { RegistrationService } from '../service/registration.service';
   styleUrls: ['./userlistdetail.component.css']
 })
 export class UserlistdetailComponent implements OnInit {
+  @Input() dataSource: any[];
   displayedColumns: string[] = ['FirstName', 'LastName', 'EmailAddress', 'Comments','ActivityName'];
-  dataSource = [];
+  
   constructor(private registrationService: RegistrationService ) { }
 
   ngOnInit() {
-    this.dataSource = this.registrationService.getUserList();
+    //this.dataSource = this.registrationService.getUserList();
   }
 
 }

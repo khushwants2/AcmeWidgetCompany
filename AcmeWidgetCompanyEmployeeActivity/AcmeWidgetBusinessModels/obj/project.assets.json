@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\khush\\source\\repos\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\AcmeWidgetBusinessModels.csproj",
+      "projectUniqueName": "C:\\Users\\khush\\source\\repos\\git\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\AcmeWidgetBusinessModels.csproj",
       "projectName": "AcmeWidgetBusinessModels",
-      "projectPath": "C:\\Users\\khush\\source\\repos\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\AcmeWidgetBusinessModels.csproj",
+      "projectPath": "C:\\Users\\khush\\source\\repos\\git\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\AcmeWidgetBusinessModels.csproj",
       "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\khush\\source\\repos\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\obj\\",
+      "outputPath": "C:\\Users\\khush\\source\\repos\\git\\AcmeWidgetCompanyEmployeeActivity\\AcmeWidgetBusinessModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\khush\\AppData\\Roaming\\NuGet\\NuGet.Config",

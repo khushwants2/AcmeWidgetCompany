@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
   public showappuserlistdetail: boolean;
   public showSuccessAlert: boolean;
   public showErrorAlert: boolean;
-  
+ public userList: any;
 
   constructor(private data: ActivityService,
     private registrationService: RegistrationService) {
@@ -23,6 +23,8 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
     this.showappuserlistdetail = false;
+
+
     this.data.getAllActivities().subscribe(success => {
       if (success) {        
         this.activities = this.data.Activities;
@@ -44,11 +46,31 @@ export class RegisterComponent implements OnInit {
     this.showErrorAlert = false;
     this.showappuserlistdetail = false;
     console.log(this.registrationForm.value);
-    this.registrationService.saveUserRegistration(this.registrationForm.value);
-    this.registrationForm.reset();
-    this.showappuserlistdetail = true;//this.registrationService.showUserList;
-    this.showSuccessAlert = true;//this.registrationService.showSuccessMessage;
-    this.showErrorAlert = this.registrationService.showErrorMessage;
+    const promise = this.registrationService.saveUserRegistration(this.registrationForm.value);
+    promise.then((data) => {
+      if (data != null && data != undefined) {
+        console.log("System returned Messgae: " + JSON.stringify(data));
+        this.userList = data;
+        this.registrationForm.reset();
+        this.showappuserlistdetail = true;
+        this.showSuccessAlert = true;
+        this.showErrorAlert = false;
+        return true;
+      }
+      else {
+        this.showappuserlistdetail = false;
+        this.showSuccessAlert = false;
+        this.showErrorAlert = true;
+        return false;
+      }
+    },
+      (error) => {
+        console.log("User registration error: " + JSON.stringify(error));
+      });
+    //this.registrationForm.reset();
+    //this.showappuserlistdetail = this.registrationService.showUserList;
+    //this.showSuccessAlert = this.registrationService.showSuccessMessage;
+    //this.showErrorAlert = this.registrationService.showErrorMessage;
   }
   hideUserdetail() {
     this.registrationForm.reset();
