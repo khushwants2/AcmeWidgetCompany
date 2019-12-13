@@ -1,0 +1,103 @@
+<div class="container" >
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <!--<form (ngSubmit)="onSubmit(formdata)" #formdata="ngForm">-->
+      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div id="user-data">
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text"
+                   id="firstname"
+                   class="form-control"
+                   formControlName="firstname">
+            <span class="error-message"
+                  *ngIf="!registrationForm.get('firstname').valid && registrationForm.get('firstname').errors.minlength && registrationForm.get('firstname').touched">
+              First Name must be at least 5 characters long.
+            </span>
+            <span class="error-message"
+                  *ngIf="!registrationForm.get('firstname').valid && registrationForm.get('firstname').errors.required && registrationForm.get('firstname').touched">
+              Please enter a First Name.
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text"
+                   id="lastname"
+                   class="form-control"
+                   formControlName="lastname">
+            <span class="error-message"
+                  *ngIf="!registrationForm.get('lastname').valid && registrationForm.get('lastname').errors.minlength && registrationForm.get('lastname').touched">
+              Last Name must be at least 5 characters long.
+            </span>
+            <span class="error-message"
+                  *ngIf="!registrationForm.get('lastname').valid && registrationForm.get('lastname').errors.required && registrationForm.get('lastname').touched">
+              Please enter a Last Name.
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email"
+                   id="email"
+                   class="form-control"
+                   formControlName="emailaddress">
+            <span class="error-message"
+                  *ngIf="!registrationForm.get('emailaddress').valid && registrationForm.get('emailaddress').touched">
+              Please enter a valid email
+            </span>
+          </div>
+
+
+          <div class="form-group">
+            <label for="activity">Activity Type</label>
+            <select id="activity"
+                    class="form-control"
+                    formControlName="activityid">
+              formControlName="activity"
+              <option *ngFor="let activity of activities"
+                      [value]="activity.activityId">
+                {{activity.activityName}}
+              </option>
+
+            </select>
+            <span class="error-message"
+                  *ngIf="!registrationForm.get('activityid').valid && registrationForm.get('activityid').touched  ">
+              Please select a Activity.
+            </span>
+
+          </div>
+
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea id="comments" class="form-control"
+                      formControlName="comments"
+                      rows="3"></textarea>
+          </div>
+          <span class="error-message"
+                *ngIf="!registrationForm.get('comments').valid && registrationForm.get('comments').touched &&
+                registrationForm.get('comments').errors.minlength">
+            Comment is more than 250 character.
+          </span>
+        </div>
+
+        <button class="btn btn-primary" type="submit"
+                [disabled]="!registrationForm.valid">
+          Submit
+        </button>
+        <div *ngIf="showSuccessAlert" class="alert alert-success">
+
+          Yey! You Registered for Actvity.
+
+        </div>
+        <div *ngIf="showErrorAlert" class="alert alert-danger">
+
+          oops! we are not able to register you.
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <app-userlistdetail *ngIf="showappuserlistdetail"></app-userlistdetail>
+  </div>
+</div>
