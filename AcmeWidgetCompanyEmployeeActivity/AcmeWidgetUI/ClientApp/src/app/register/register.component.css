@@ -12,3 +12,8 @@ label {
   color: red;
   font-size:small;
 }
+
+.form-header{
+    text-align: center;
+    font:bold large
+}

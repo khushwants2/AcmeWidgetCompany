@@ -72,8 +72,10 @@ export class RegisterComponent implements OnInit {
     //this.showSuccessAlert = this.registrationService.showSuccessMessage;
     //this.showErrorAlert = this.registrationService.showErrorMessage;
   }
-  hideUserdetail() {
+  ShowRegistrationForm() {
     this.registrationForm.reset();
+    this.showSuccessAlert = false;
+    this.showErrorAlert = false;
     this.showappuserlistdetail = false;
   }
 

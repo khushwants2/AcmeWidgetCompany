@@ -86,7 +86,7 @@ namespace AcmeWidgetCompanyEmployeeActivity.Data
                         ActivityId = act.ActivityId
                     }
                     )
-                    .Where(r => r.ActivityId == activityId)
+                    .Where(r => r.ActivityId == activityId)                    
                     .ToList();
 
                 return results;
