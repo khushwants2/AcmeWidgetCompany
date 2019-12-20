@@ -9,5 +9,10 @@ the respective project is divided into below parts
 
 Note: to run the project in Visual Studio
 1. Start the data Layer in debug mode
-2. the right click on AcmeWidgetUI project >> Debug >> start a new instance
-3. open command prompt navigate to AcmeWidgetUI\ClientApp then type ng serve --open
+2. open command prompt navigate to AcmeWidgetUI\ClientApp then type ng serve --open
+3. After 2nd Step go back to VS and right click on AcmeWidgetUI project >> Debug >> start a new instance
+
+Requirements
+VS 2019
+.Net Core 3.1
+
