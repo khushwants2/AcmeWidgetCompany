@@ -78,6 +78,7 @@ namespace AcmeWidgetCompanyEmployeeActivity.Data
                     act => act.ActivityId,
                     (reg, act) => new RegisteredUserInfo
                     {
+                        Id = reg.Id,
                         FirstName = reg.FirstName,
                         LastName = reg.LastName,
                         EmailAddress = reg.EmailAddress,
@@ -86,7 +87,8 @@ namespace AcmeWidgetCompanyEmployeeActivity.Data
                         ActivityId = act.ActivityId
                     }
                     )
-                    .Where(r => r.ActivityId == activityId)                    
+                    .Where(r => r.ActivityId == activityId)
+                    .OrderByDescending(r => r.Id)
                     .ToList();
 
                 return results;

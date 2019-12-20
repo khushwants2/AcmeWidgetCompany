@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeWidgetCompanyEmployeeActivity", "AcmeWidgetCompanyEmployeeActivity\AcmeWidgetCompanyEmployeeActivity.csproj", "{0C0D32A4-EB39-4554-B7B8-1ED7015FB0AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeWidgetUI", "AcmeWidgetUI\AcmeWidgetUI.csproj", "{64D36CDB-0499-47E7-9669-89623CAC82BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeWidgetUI", "AcmeWidgetUI\AcmeWidgetUI.csproj", "{64D36CDB-0499-47E7-9669-89623CAC82BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeWidgetBusinessModels", "AcmeWidgetBusinessModels\AcmeWidgetBusinessModels.csproj", "{86548788-935A-4026-AF4F-925085E18ADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeWidgetBusinessModels", "AcmeWidgetBusinessModels\AcmeWidgetBusinessModels.csproj", "{86548788-935A-4026-AF4F-925085E18ADD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
