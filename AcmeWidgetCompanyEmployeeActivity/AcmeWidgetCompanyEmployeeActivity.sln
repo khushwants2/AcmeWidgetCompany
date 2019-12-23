@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeWidgetUI", "AcmeWidgetU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeWidgetBusinessModels", "AcmeWidgetBusinessModels\AcmeWidgetBusinessModels.csproj", "{86548788-935A-4026-AF4F-925085E18ADD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeWidget.Tests", "AcmeWidget.Tests\AcmeWidget.Tests.csproj", "{C061F006-177F-458C-A65B-4F5451D80062}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{86548788-935A-4026-AF4F-925085E18ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86548788-935A-4026-AF4F-925085E18ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86548788-935A-4026-AF4F-925085E18ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C061F006-177F-458C-A65B-4F5451D80062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C061F006-177F-458C-A65B-4F5451D80062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C061F006-177F-458C-A65B-4F5451D80062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C061F006-177F-458C-A65B-4F5451D80062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
